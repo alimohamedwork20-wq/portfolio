@@ -37,22 +37,26 @@ function button() {
   if (img1.classList.contains("activImg")) {
     select.style.background = "#0a087666";
     select.style.cursor = "pointer";
-    a.href = 'https://iphone-work.netlify.app/'
-    a.target = '_blank'
+    a.href = "https://alimohamedwork20-wq.github.io/iphone/";
+    a.target = "_blank";
+    select.innerHTML = "SELECT IPHONE PROJECT";
   } else if (img2.classList.contains("activImg")) {
     select.style.background = "#0a087666";
     select.style.cursor = "pointer";
-    a.href = 'https://avater-work.netlify.app/'
-    a.target = '_blank'
+    a.href = "https://alimohamedwork20-wq.github.io/avater/";
+    a.target = "_blank";
+    select.innerHTML = "SELECT AVATER PROJECT";
   } else if (img3.classList.contains("activImg")) {
     select.style.background = "#0a087666";
     select.style.cursor = "pointer";
-    a.href = 'https://control-panal-work.netlify.app/'
-    a.target = '_blank'
+    a.href = "https://alimohamedwork20-wq.github.io/control_panal/";
+    a.target = "_blank";
+    select.innerHTML = "SELECT CONTROL PANAL PROJECT";
   } else {
     select.style.background = "transparent";
     select.style.cursor = "default";
-    a.href = '#'
-    a.target = '_parent'
+    a.href = "#";
+    a.target = "_parent";
+    select.innerHTML = "SELECT";
   }
 }

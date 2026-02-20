@@ -208,6 +208,14 @@ img:hover {
   background-color: transparent;
   border: 1px solid rgb(89, 89, 89);
   cursor: default;
+  text-align: center;
+  width: 50px;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+  padding: 10px 30px;
+  text-wrap: nowrap;
 }
 .activImg {
   border: solid 1px white;
