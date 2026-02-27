@@ -1,10 +1,3 @@
-let menu = document.getElementById("menu");
-let content = document.getElementById("content");
-menu.addEventListener("click", function () {
-  menu.classList.toggle("fa-bars");
-  menu.classList.toggle("fa-xmark");
-  content.classList.toggle("active");
-});
 
 let img1 = document.getElementById("one");
 let img2 = document.getElementById("two");
@@ -59,4 +52,46 @@ function button() {
     a.target = "_parent";
     select.innerHTML = "SELECT";
   }
+}
+
+let search = document.getElementById('srch');
+let COFFE = document.getElementById('COFFE');
+let CRUDS = document.getElementById('CRUDS');
+let Space = document.getElementById('Space');
+let Transaction = document.getElementById('Transaction');
+let ToDoList = document.getElementById('TO-DO-LIST');
+let Course = document.getElementById('Course');
+let Shop = document.getElementById('Shop');
+
+function print(){
+let srch = search.value.toLowerCase()
+if(srch.includes('coffe')){
+  COFFE.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('cruds')){
+    CRUDS.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('space')){
+    Space.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('transaction')){
+    Transaction.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('to do list')||srch.includes('to-do-list')){
+    ToDoList.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('course')||srch.includes('education platform')||srch.includes('education-platform')){
+    Course.scrollIntoView({
+    behavior: "smooth"
+  })
+}else if(srch.includes('shop')){
+    Shop.scrollIntoView({
+    behavior: "smooth"
+  })
+}
 }

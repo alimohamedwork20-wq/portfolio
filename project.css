@@ -13,7 +13,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: rgb(1, 2, 51);
+  background-color: rgb(222, 222, 222);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -21,40 +21,11 @@ body {
 a {
   text-decoration: none;
 }
-
-/* ==== HEADER ==== */
-header {
+.navbar{
   position: fixed;
-  top: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 15px 10px;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
-  z-index: 1000;
-  gap: 30px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-}
-
-header a {
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 13px;
-  padding-bottom: 6px;
-}
-
-header a:hover {
-  border-bottom: 2px solid white;
-}
-
-header span {
-  font-size: 9px;
+  top: 0;
+  z-index: 20;
 }
 
 /* ==== CONTENT ==== */
@@ -70,52 +41,23 @@ header span {
 #CRUDS,
 #Space,
 #Transaction,
-#TO-DO-LIST {
+#TO-DO-LIST,
+#Shop,
+#Course,
+#select {
   position: relative;
-  width: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgb(3, 0, 28), rgb(1, 2, 52), black);
   padding: 100px 0;
   overflow: hidden;
   scroll-margin-top: 100px;
   min-height: 80vh;
-}
-
-/* البلور فوق وتحت */
-#COFFE::before,
-#CRUDS::before,
-#Space::before,
-#Transaction::before,
-#TO-DO-LIST::before,
-#COFFE::after,
-#CRUDS::after,
-#Space::after,
-#Transaction::after,
-#TO-DO-LIST::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  pointer-events: none;
-}
-
-#COFFE::before,
-#CRUDS::before,
-#Space::before,
-#Transaction::before,
-#TO-DO-LIST::before {
-  top: 0;
-  background: linear-gradient(to bottom, rgb(1, 2, 51), transparent);
-}
-
-#COFFE::after,
-#CRUDS::after,
-#Space::after,
-#Transaction::after,
-#TO-DO-LIST::after {
-  bottom: 0;
-  background: linear-gradient(to top, rgb(1, 2, 51), transparent);
+  background-color: rgb(34, 104, 255);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 /* ==== HEADINGS ==== */
@@ -161,6 +103,10 @@ p {
   display: flex;
   flex-direction: column;
 }
+.details a{
+  width: fit-content;
+  margin: auto;
+}
 .active {
   display: flex;
 }
@@ -200,42 +146,43 @@ img:hover {
 #three {
   cursor: pointer;
 }
-
+#COFFE{
+  width: 100%;
+}
 #select {
   text-align: center;
+  background-color: red;
+  width: 100%;
+  background-color: rgb(0, 115, 255);
 }
-#selecting {
-  background-color: transparent;
-  border: 1px solid rgb(89, 89, 89);
-  cursor: default;
-  text-align: center;
-  width: 50px;
-  width: fit-content;
-  margin: 0;
-  padding: 0;
-  margin-top: 5%;
-  padding: 10px 30px;
-  text-wrap: nowrap;
+#select #selecting {
+  transition: 0.3s;
 }
 .activImg {
   border: solid 1px white;
   transform: scale(1.1);
 }
+.navbar a{
+  text-wrap: nowrap;
+}
 /* ==== BUTTON ==== */
-button {
+.details button {
   background-color: rgba(0, 0, 95, 0.6);
   padding: 10px 100px;
-  margin: 0 25%;
   margin-top: 20px;
   cursor: pointer;
   border: 2px solid white;
   border-radius: 8px;
   transition: 0.3s;
 }
-button:hover {
+ button:hover {
   background-color: transparent;
+  color: rgb(196, 196, 196);
 }
-
+#selecting:hover {
+  background-color: rgb(0, 115, 255);
+  color: white;
+}
 /* ==== RESPONSIVE ==== */
 
 /* Tablets (768px – 1024px) */
@@ -272,7 +219,9 @@ button:hover {
   #CRUDS,
   #Space,
   #Transaction,
-  #TO-DO-LIST {
+  #TO-DO-LIST,
+  #Shop,
+  #Course {
     padding: 80px 10px;
   }
 
