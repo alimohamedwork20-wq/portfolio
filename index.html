@@ -1,203 +1,387 @@
--
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latitude - The Breadth of Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="templatemo-split-style.css" />
+    <!--
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="project.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-  <title>Document</title>
-</head>
+TemplateMo 616 Split Index
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary align-items-center">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Projects</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div style="transition: 0.3s;" class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#COFFE">Coffe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#CRUDS">CRUDS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Space">Space</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Transaction">Transaction</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#TO-DO-LIST">TO DO LIST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Course">Education platform</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Shop">Shop</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button onclick="print()" class="btn btn-outline-success" type="button">Search</button>
-        </form>
+https://templatemo.com/tm-616-split-index
+
+-->
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="site-brand">
+        <a class="site-title" data-nav="work">Portfolio</a>
+        <div class="site-divider-v"></div>
+        <span class="site-tagline">The Breadth of Vision</span>
       </div>
-    </div>
-  </nav>
+      <nav class="site-header-nav">
+        <a data-nav="work" class="nav-active">Work</a>
+        <a data-nav="about">About</a>
+        <a data-nav="contact">Contact</a>
+      </nav>
+    </header>
 
-  <div class="contener">
-    <div id="select">
-      <h3>Small projects!</h3>
-      <div class="details">
-        <p>
-          There are some small projects that I've made that look small, but
-          they have unique details.
-        </p>
-        <div class="img">
-          <img id="one" src="Screenshot (62).png" alt="" />
-          <img id="two" src="Screenshot 2025-12-17 222245.png" alt="" />
-          <img id="three" src="Screenshot (61).png" alt="" />
+    <!-- Main Split -->
+    <div class="split-container">
+      <!-- LEFT: Swappable Panels -->
+      <div class="left-side">
+        <!-- Panel: Work -->
+        <div class="panel panel-active" id="panel-work">
+          <div class="panel-header">
+            <span>Selected Works — 2024 / 2026</span>
+          </div>
+          <ul class="project-list" id="projectList">
+            <li class="project-item" data-index="0">
+              <a
+                target="_blank"
+                href="https://alimohamedwork20-wq.github.io/products/"
+                class="project-link"
+              >
+                <span class="project-number">01</span>
+                <span class="project-title">Products</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">React</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="1">
+              <a
+                target="_blank"
+                href="https://alimohamedwork20-wq.github.io/movice/"
+                class="project-link"
+              >
+                <span class="project-number">02</span>
+                <span class="project-title">Movies</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">React</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="2">
+              <a
+                target="_blank"
+                href="https://alimohamedwork20-wq.github.io/shop/"
+                class="project-link"
+              >
+                <span class="project-number">03</span>
+                <span class="project-title">E-commerce</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">Bootstrap</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="3">
+              <a
+                target="_blank"
+                href="https://alimohamedwork20-wq.github.io/CRUDS/"
+                class="project-link"
+              >
+                <span class="project-number">04</span>
+                <span class="project-title">CRUDS</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">html-css-js</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="4">
+              <a
+                target="_blank"
+                href="https://www.mediafire.com/file/9xes0iiglntu3g3/Bank+App.rar/file"
+                class="project-link"
+              >
+                <span class="project-number">05</span>
+                <span class="project-title">Bank system</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">c#(solid)-sql</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="5">
+              <a href="https://alimohamedwork20-wq.github.io/to_do_list/" class="project-link">
+                <span class="project-number">06</span>
+                <span class="project-title">To-Do-List</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">html-css-js</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="6">
+              <a href="#" class="project-link">
+                <span class="project-number">07</span>
+                <span class="project-title">It is being worked on</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">worked...</span>
+              </a>
+            </li>
+            <li class="project-item" data-index="7">
+              <a href="#" class="project-link">
+                <span class="project-number">08</span>
+                <span class="project-title">It is being worked on</span>
+                <span class="project-arrow"
+                  ><svg viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" /></svg
+                ></span>
+                <span class="project-category">worked...</span>
+              </a>
+            </li>
+          </ul>
+          <div class="panel-footer">
+            <span>8 Projects</span>
+            <span>Hover to Preview</span>
+          </div>
         </div>
 
-        <a id="a" href="#"><button id="selecting">SELECT</button></a>
+        <!-- Panel: About -->
+        <div class="panel" id="panel-about">
+          <div class="about-content">
+            <span class="about-label">About the Studio</span>
+            <h2 class="about-headline">
+              Ali Mohamed Salam <em>Web development</em>
+            </h2>
+            <p class="about-body">
+              I am a 17-year-old Full-Stack Developer based in Egypt, driven by
+              a passion for creating high-performance web and desktop
+              applications. I specialize in building dynamic user interfaces
+              with React and robust backend systems using C# and .NET. I have a
+              proven track record of developing end-to-end projects, from
+              e-commerce platforms to database-driven management systems. My
+              focus is on writing clean, maintainable code and applying OOP
+              principles to build scalable software. I am a lifelong learner,
+              always eager to tackle new challenges and contribute to innovative
+              tech solutions. Technical Toolbox: Languages: C#, JavaScript, SQL.
+              Frameworks: React.js, .NET Core, EF Core. Data: SQL Server, SQLite
+              (Local DB). Architecture: RESTful APIs, SOLID Principles.
+              <HR/><BR/>
+              <ul>
+                <h2>Skills:</h2><BR/>
+                <li><h4>Front-End:</h4> HTML5, CSS3, Bootstrap 5, JavaScript (ES6+), React.js</li><BR/>
+                <li><h4>Back-End:</h4> C#(Solid Principle), ASP.NET Core (Web API)</li><BR/>
+                <li><h4>Database:</h4> SQL Server, Entity Framework Core</li><BR/>
+                <li><h4>Tools:</h4> Git, Github, Visual Studio 2022, VS Code</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel: Contact -->
+        <div class="panel" id="panel-contact">
+          <div class="contact-content">
+            <span class="contact-label">Get in Touch</span>
+            <h2 class="contact-headline">Start a conversation.</h2>
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="hello@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your project..."
+                ></textarea>
+              </div>
+              <button type="button" class="form-submit">Send Message</button>
+            </div>
+            <div class="contact-details">
+              <span>Direct</span>
+              <a href="mailto:ali.mohamed.work20@gmail.com"
+                >ali.mohamed.work20@gmail.com</a
+              >
+              <span>Social</span>
+              <div class="s">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/ali._.m0hamed/?hl=ar"
+                  >Instagram /</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ali-mohamed-0641b9408/"
+                >
+                  Linkedin /</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/alimohamedwork20-wq"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="split-divider"></div>
+
+      <!-- RIGHT: The Canvas -->
+      <div class="canvas-side" id="canvasSide">
+        <!-- Placeholder (Work default) -->
+        <div class="canvas-placeholder" id="placeholder">
+          <div class="placeholder-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v4m0 12v4m-10-10h4m12 0h4m-3.3-6.7-2.8 2.8m-5.8 5.8-2.8 2.8m0-11.3 2.8 2.8m5.8 5.8 2.8 2.8"
+              />
+            </svg>
+          </div>
+          <span class="placeholder-text">Select a project</span>
+        </div>
+
+        <!-- Work images -->
+        <div class="canvas-image" data-slide="0">
+          <img src="images/products.jpg" alt="Meridian" loading="lazy" />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">Meridian</div>
+            <div class="canvas-caption-year">Architecture — 2026</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="1">
+          <img src="images/movies.jpg" alt="Still Water" loading="lazy" />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">Still Water</div>
+            <div class="canvas-caption-year">Editorial — 2025</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="2">
+          <img src="images/shop.jpg" alt="Terrain" loading="lazy" />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">Terrain</div>
+            <div class="canvas-caption-year">Landscape — 2025</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="3">
+          <img src="images/curds.jpg" alt="Mono" loading="lazy" />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">Mono</div>
+            <div class="canvas-caption-year">Fashion — 2025</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="4">
+          <img src="images/bank.jpg" alt="Solstice" loading="lazy" />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">Solstice</div>
+            <div class="canvas-caption-year">Fine Art — 2024</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="5">
+          <img
+            src="images/to do list.jpg"
+            alt="Patina"
+            loading="lazy"
+          />
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">It is being worked on</div>
+            <div class="canvas-caption-year">Product — 2024</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="6">
+          <video width="100%" muted autoplay loop controls poster="image.jpg">
+            <source src="images/Trending 3D Grid Loop Background Free Download.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+          </video>
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">It is being worked on</div>
+            <div class="canvas-caption-year">Portrait — 2026</div>
+          </div>
+        </div>
+        <div class="canvas-image" data-slide="7">
+          <video width="100%" muted autoplay loop controls poster="image.jpg">
+            <source src="images/Trending 3D Grid Loop Background Free Download.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+          </video>
+          <div class="canvas-caption">
+            <div class="canvas-caption-title">It is being worked on</div>
+            <div class="canvas-caption-year">Motion — 2026</div>
+          </div>
+        </div>
+
+        <!-- About context image -->
+        <div class="canvas-context" data-context="about">
+          <img src="images/me.png" alt="Studio" loading="lazy" />
+          <div class="canvas-context-overlay">
+            <p class="canvas-context-quote">
+              "Photography is the story I fail to put into words."
+            </p>
+            <span class="canvas-context-attr">— Destin Sparks</span>
+          </div>
+        </div>
+
+        <!-- Contact context image -->
+        <div class="canvas-context" data-context="contact">
+          <img
+            src="images/contact.jpg"
+            alt="Contact"
+            loading="lazy"
+          />
+          <div class="canvas-context-overlay">
+            <p class="canvas-context-quote">
+              "We'd love to hear about your next project."
+            </p>
+            <span class="canvas-context-attr">— Latitude Studio</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="COFFE">
-      <h3>COFFE PROJECT</h3>
-      <div class="img">
-        <img src="Screenshot 2025-12-21 213043.png" alt="" />
-        <img src="Screenshot (47).png" alt="" />
-        <img src="Screenshot (46).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          A cozy coffee shop serving freshly brewed coffee and specialty
-          drinks in a warm, inviting atmosphere perfect for relaxing, working,
-          or meeting friends.
-        </p>
 
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/CAFFEINE_COVE/"><button>GO NOW</button></a>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <span>&copy; 2026 ali mohamed. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <span class="footer-dot">&middot;</span>
+        <span class="footer-dot">&middot;</span>
+        <a href="https://templatemo.com" rel="nofollow" target="_blank"
+          >TemplateMo</a
+        >
       </div>
-    </div>
-    <div id="CRUDS">
-      <h3>CRUDS PROJECT</h3>
-      <div class="img">
-        <img src="Screenshot (48).png" alt="" />
-        <img src="Screenshot (49).png" alt="" />
-        <img src="Screenshot (50).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          A full-featured CRUD application that allows users to create, read,
-          update, and delete data seamlessly. Built with a clean interface and
-          robust functionality, it demonstrates efficient data management and
-          dynamic user interactions.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/CRUDS/"><button>GO NOW</button></a>
-      </div>
-    </div>
-    <div id="Space">
-      <h3>SPACE PROJECT</h3>
-      <div class="img">
-        <img src="Screenshot (51).png" alt="" />
-        <img src="Screenshot (52).png" alt="" />
-        <img src="Screenshot (53).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          A dynamic project exploring space-themed concepts and data
-          visualization. It showcases interactive designs, real-time
-          information, and creative solutions inspired by astronomy and space
-          exploration.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/space/"><button>GO NOW</button></a>
-      </div>
-    </div>
-    <div id="Transaction">
-      <h3>TransactioN PROJECT</h3>
-      <div class="img">
-        <img src="Screenshot (54).png" alt="" />
-        <img src="Screenshot (55).png" alt="" />
-        <img src="Screenshot (56).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          A secure and efficient transaction system that allows users to
-          manage, track, and process financial operations seamlessly. The
-          project highlights data integrity, real-time updates, and a
-          user-friendly interface for smooth financial management.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/data/"><button>GO NOW</button></a>
-      </div>
-    </div>
-    <div id="TO-DO-LIST">
-      <h3>TO DO LIST <span>PROJECT</span></h3>
-      <div class="img">
-        <img src="Screenshot (57).png" alt="" />
-        <img src="Screenshot (58).png" alt="" />
-        <img src="Screenshot (59).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          A dynamic To-Do List application that helps users manage tasks
-          efficiently. It allows creating, editing, completing, and deleting
-          tasks with a clean and interactive interface, improving productivity
-          and organization.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/to_do_list/"><button>GO NOW</button></a>
-      </div>
-    </div>
-
-    <div id="Course">
-      <h3>Education platform <span>PROJECT</span></h3>
-      <div class="img">
-        <img src="Screenshot (75).png" alt="" />
-        <img src="Screenshot (76).png" alt="" />
-        <img src="Screenshot (77).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          Our Course Learning Platform is an innovative and user-friendly online education system designed to deliver
-          high-quality courses to learners worldwide. The platform provides interactive video lessons, downloadable
-          resources, quizzes, assignments, and real-time progress tracking to ensure an engaging and effective learning
-          experience.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/Course/"><button>GO NOW</button></a>
-      </div>
-    </div>
-
-    <div id="Shop">
-      <h3>Shop <span>PROJECT</span></h3>
-      <div class="img">
-        <img src="Screenshot (78).png" alt="" />
-        <img src="Screenshot (79).png" alt="" />
-        <img src="Screenshot (80).png" alt="" />
-      </div>
-      <div class="details">
-        <p>
-          Our Shop Platform is a modern and user-friendly e-commerce solution designed to provide a seamless online
-          shopping experience. Customers can easily browse products, view detailed descriptions and images, add items to
-          their cart, and complete secure payments in just a few steps.
-        </p>
-
-        <a target="_blank" href="https://alimohamedwork20-wq.github.io/shop/"><button>GO NOW</button></a>
-      </div>
-    </div>
-  </div>
-  <script src="bootstrap.bundle.min.js"></script>
-  <script src="project.js"></script>
-</body>
-
-
+    </footer>
+    <script src="templatemo-split-index.js"></script>
+  </body>
 </html>
